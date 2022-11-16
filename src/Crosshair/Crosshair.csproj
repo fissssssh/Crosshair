@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<ApplicationIcon>Icons/crosshair_256x256.ico</ApplicationIcon>
+		<Version>1.0.0</Version>
+		<FileVersion>1.0.0.0</FileVersion>
+		<Authors>Zhang Jiancheng</Authors>
+		<Copyright>Copyright © 2022 fissssssh.com</Copyright>
+		<RepositoryUrl>https://github.com/fissssssh/Crosshair</RepositoryUrl>
+		<SatelliteResourceLanguages>None</SatelliteResourceLanguages>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Resource Include="Icons\crosshair_256x256.ico" />
+		<Resource Include="Icons\crosshair_64x64.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+		<PackageReference Include="Extended.Wpf.Toolkit" Version="4.4.0" />
+		<PackageReference Include="H.NotifyIcon.Wpf" Version="2.0.74" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Properties\Resources.zh-cn.Designer.cs">
+			<DependentUpon>Resources.zh-CN.resx</DependentUpon>
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+		</Compile>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.zh-CN.resx">
+			<LastGenOutput>Resources.zh-cn.Designer.cs</LastGenOutput>
+			<Generator>ResXFileCodeGenerator</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+</Project>

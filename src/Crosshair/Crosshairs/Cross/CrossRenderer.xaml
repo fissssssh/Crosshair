@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Crosshair.Crosshairs.Cross.CrossRenderer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Crosshair.Crosshairs.Cross"
+             mc:Ignorable="d"
+             d:DataContext="{d:DesignInstance Type=local:CrossViewModel}"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Visibility="{Binding Enabled,Converter={StaticResource bool2VisibilityCvt}}">
+        <Line X1="{Binding LeftX1}" Y1="{Binding LeftY1}" X2="{Binding LeftX2}" Y2="{Binding LeftY2}" StrokeThickness="{Binding Thickness}" Stroke="{Binding Color,Converter={StaticResource color2SolidColorBrushCvt}}"></Line>
+        <Line X1="{Binding TopX1}" Y1="{Binding TopY1}" X2="{Binding TopX2}" Y2="{Binding TopY2}" StrokeThickness="{Binding Thickness}" Stroke="{Binding Color,Converter={StaticResource color2SolidColorBrushCvt}}"></Line>
+        <Line X1="{Binding RightX1}" Y1="{Binding RightY1}" X2="{Binding RightX2}" Y2="{Binding RightY2}" StrokeThickness="{Binding Thickness}" Stroke="{Binding Color,Converter={StaticResource color2SolidColorBrushCvt}}"></Line>
+        <Line X1="{Binding BottomX1}" Y1="{Binding BottomY1}" X2="{Binding BottomX2}" Y2="{Binding BottomY2}" StrokeThickness="{Binding Thickness}" Stroke="{Binding Color,Converter={StaticResource color2SolidColorBrushCvt}}"></Line>
+    </Grid>
+</UserControl>

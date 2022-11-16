@@ -1,0 +1,21 @@
+﻿<Window x:Class="Crosshair.ConfigurationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crosshair"
+        xmlns:loc="clr-namespace:Crosshair.Properties"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance Type=local:MainWindowViewModel}"
+        Title="{x:Static loc:Resources.Configuration_Configuration}" SizeToContent="Height" Height="Auto" Width="400" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <StackPanel Grid.IsSharedSizeScope="True" Margin="8">
+        <GroupBox Header="{x:Static loc:Resources.Configuration_Global}">
+            <StackPanel>
+                <CheckBox IsChecked="{Binding Settings.Enabled}" Content="{x:Static loc:Resources.Configuration_Enabled}" />
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="{x:Static loc:Resources.Crosshair_Cross}" Content="{Binding  Cross.Configuration}" />
+        <GroupBox Header="{x:Static loc:Resources.Crosshair_Dot}" Content="{Binding Dot.Configuration}" />
+        <GroupBox Header="{x:Static loc:Resources.Crosshair_InvertedTriangle}" Content="{Binding InvertedTriangle.Configuration}" />
+    </StackPanel>
+</Window>

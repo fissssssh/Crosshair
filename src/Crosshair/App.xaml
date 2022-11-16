@@ -1,0 +1,10 @@
+﻿<Application x:Class="Crosshair.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:cvts="clr-namespace:Crosshair.Converters"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <BooleanToVisibilityConverter x:Key="bool2VisibilityCvt" />
+        <cvts:ColorToSolidColorBrushConverter x:Key="color2SolidColorBrushCvt" />
+    </Application.Resources>
+</Application>
