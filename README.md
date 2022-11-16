@@ -1,5 +1,8 @@
 # Crosshair
 
+![](https://img.shields.io/github/license/fissssssh/Crosshair)
+![](https://img.shields.io/github/v/release/fissssssh/Crosshair)
+
 Crosshair 是一个简单准星程序
 
 ![crosshair](images/crosshair.gif)
