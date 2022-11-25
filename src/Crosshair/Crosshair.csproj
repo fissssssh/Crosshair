@@ -6,8 +6,8 @@
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<ApplicationIcon>Icons/crosshair_256x256.ico</ApplicationIcon>
-		<Version>1.0.0</Version>
-		<FileVersion>1.0.0.0</FileVersion>
+		<Version>1.0.1</Version>
+		<FileVersion>1.0.1.0</FileVersion>
 		<Authors>Zhang Jiancheng</Authors>
 		<Copyright>Copyright © 2022 fissssssh.com</Copyright>
 		<RepositoryUrl>https://github.com/fissssssh/Crosshair</RepositoryUrl>
